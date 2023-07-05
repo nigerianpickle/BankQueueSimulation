@@ -1,27 +1,13 @@
-public class AirportQueue {
-    public static void main(String[] args) {
-        AirQueue one=new AirQueue();
-        one.enqueue(new QueuePerson("Daniel"));
-        one.enqueue(new QueuePerson("David"));
-        one.enqueue(new QueuePerson("Damila"));
-        System.out.println(one);
-        one.dequeue();
-        //new queue
-        System.out.println(one);
-        one.enqueue(new QueuePerson("James"));
-        System.out.println(one.size());
-    }
-
-    public static class AirQueue{
+public  class BankQueue{
         QueuePerson head;
         QueuePerson tail;
 
-        public AirQueue(){
+        public BankQueue(){
             head=null;
             tail=null;
         }
 
-        public AirQueue(QueuePerson p){
+        public BankQueue(QueuePerson p){
             head=p;
             tail=p;
         }
@@ -97,27 +83,5 @@ public class AirportQueue {
         }
     }
 
-    public static class QueuePerson{
-        String name;
-        QueuePerson next=null;
-        public QueuePerson(String n,QueuePerson nxt){
-            name=n;
-            next=nxt;
-        }
-        public QueuePerson(String n){
-            name=n;
-        }
 
-        public QueuePerson getNext(){
-            return this.next;
-        }
 
-        public String personName(){
-            return name;
-        }
-
-        public void setNext(QueuePerson p){
-            this.next=p;
-        }
-    }
-}
