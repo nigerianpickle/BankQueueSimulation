@@ -1,3 +1,7 @@
+
+
+#will implement a patience system in the future
+#Bank will try to serve customers in the more efficient way possible
 public class QueuePerson {
         private String name;
         QueuePerson next=null; //will optimize to private
